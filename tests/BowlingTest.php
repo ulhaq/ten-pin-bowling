@@ -1,10 +1,12 @@
 <?php
 use Bowling\Bowling;
+use PHPUnit\Framework\TestCase;
 
-class BowlingTest extends PHPUnit_Framework_TestCase {
+
+class BowlingTest extends TestCase {
   private $game;
 
-  public function setUp() {
+  protected function setUp(): void {
     $this->game = new Bowling("TestToken");
   }
 
